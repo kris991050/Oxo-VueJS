@@ -117,6 +117,7 @@ export default {
           clearInterval(counterInterval);
           this.$store.dispatch('switchTurn');
           this.$store.dispatch('setWinner', true);
+          this.$store.dispatch('scoresModule/incScore', this.turn);
         }
         else {
           this.$store.dispatch('counterModule/setCounter', this.counterDisplay-1)

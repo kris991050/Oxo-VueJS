@@ -117,6 +117,7 @@ export default {
           clearInterval(counterInterval);
           store.dispatch('switchTurn');
           store.dispatch('setWinner', true);
+          store.dispatch('scoresModule/incScore', turn.value);
         }
         else {
           store.dispatch('counterModule/setCounter', counterDisplay.value-1)
