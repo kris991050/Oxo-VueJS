@@ -7,3 +7,6 @@ To install the node_modules and start the live stream run commands in the termin
 - npm audit fix --force
 - (npm i -D eslint@7.32.0)
 - npm run serve
+
+To start using docker:
+- docker compose up
